@@ -6,3 +6,6 @@
 
 # ignore temporary files
 *~
+nbproject
+vendor
+composer.lock

@@ -1,20 +1,31 @@
 {
-	"name": "sammaye/yii2-outdated-browser",
-	"description": "A Yii2 widget for outdated-browser",
-	"keywords": ["yii2", "extension", "browser", "outdated-browser"],
-	"type": "yii2-extension",
-	"license": "BSD-3-Clause",
-	"authors": [
-		{
-			"name": "Sammaye",
-			"homepage": "http://sammaye.wordpress.com/"
-		}
-	],
-	"require": {
-		"yiisoft/yii2": "dev-master",
-		"bower-asset/outdated-browser": "1.1.0"
-	},
-	"autoload": {
-		"psr-4": {"sammaye\\outdatedBrowser\\": ""}
-	}
+    "name": "biller/yii2-outdated-browser",
+    "description": "A Yii2 widget for outdated-browser",
+    "keywords": ["yii2", "extension", "browser", "outdated-browser"],
+    "type": "yii2-extension",
+    "license": "BSD-3-Clause",
+    "require": {
+        "yiisoft/yii2": "^2.0",
+        "bower-asset/outdated-browser": "1.1.0"
+    },
+    "config": {
+        "process-timeout": 1800,
+        "fxp-asset": {
+            "installer-paths": {
+                "npm-asset-library": "vendor/npm",
+                "bower-asset-library": "vendor/bower"
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "biller\\outdatedBrowser\\": ""
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
 }

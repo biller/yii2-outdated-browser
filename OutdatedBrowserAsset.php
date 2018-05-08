@@ -1,20 +1,21 @@
 <?php
-namespace sammaye\outdatedBrowser;
 
-use Yii;
+namespace biller\outdatedBrowser;
+
 use yii\web\AssetBundle;
+use yii\web\JqueryAsset;
 
-class OutDatedBrowserAsset extends AssetBundle
-{
-	public $js = ['outdatedbrowser/outdatedbrowser.js'];
-	public $css = ['outdatedbrowser/outdatedbrowser.css'];
-	public $depends = [
-		'yii\web\JqueryAsset'
-	];
+class OutDatedBrowserAsset extends AssetBundle {
 
-	public function init()
-	{
-		$this->sourcePath = '@bower/outdated-browser';
-		parent::init();
-	}
+    public $sourcePath = '@bower/outdated-browser';
+    public $js = [
+        'outdatedbrowser/outdatedbrowser.js',
+    ];
+    public $css = [
+        'outdatedbrowser/outdatedbrowser.css',
+    ];
+    public $depends = [
+        JqueryAsset::class,
+    ];
+
 }
