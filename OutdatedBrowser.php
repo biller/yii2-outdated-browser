@@ -3,6 +3,7 @@
 namespace biller\outdatedBrowser;
 
 use yii\base\Widget;
+use yii\helpers\Html;
 
 class Outdatedbrowser extends Widget {
 
@@ -19,9 +20,12 @@ class Outdatedbrowser extends Widget {
             'bundle' => $bundle,
         ]);
         $this->view->registerJs($js);
+        $div = Html::tag('div', '', ['id' => 'outdated']);
+        return $this->onlyIe7 ? "<!--[if lt IE 8]>$div<![endif]-->" : $div;
     }
 
-    public function getLanguagePath(){
+    public function getLanguagePath() {
         return "$this->baseUrl/outdatedbrowser/lang/$this->language.html";
     }
+
 }

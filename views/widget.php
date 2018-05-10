@@ -18,7 +18,3 @@ use yii\web\View;
 <?php if (false) { ?>
     </script>
 <?php } ?>
-<?= $widget->onlyIe7 ? '<!--[if lt IE 8]>' : '' ?>
-<div id="outdated"></div>
-<?=
-$widget->onlyIe7 ? '<![endif]-->' : '' ?>
