@@ -6,7 +6,7 @@
     "license": "BSD-3-Clause",
     "require": {
         "yiisoft/yii2": "^2.0",
-        "bower-asset/outdated-browser": "^1.1.0"
+        "bower-asset/outdated-browser": "^1.1"
     },
     "config": {
         "process-timeout": 1800,
