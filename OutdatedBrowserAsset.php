@@ -7,12 +7,12 @@ use yii\web\JqueryAsset;
 
 class OutDatedBrowserAsset extends AssetBundle {
 
-    public $sourcePath = '@bower/outdated-browser';
+    public $sourcePath = '@bower/outdated-browser/outdatedbrowser';
     public $js = [
-        'outdatedbrowser/outdatedbrowser.js',
+        'outdatedbrowser.min.js',
     ];
     public $css = [
-        'outdatedbrowser/outdatedbrowser.css',
+        'outdatedbrowser.min.css',
     ];
     public $depends = [
         JqueryAsset::class,
