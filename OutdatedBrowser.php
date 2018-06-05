@@ -6,7 +6,7 @@ use yii\base\Widget;
 use yii\helpers\ArrayHelper;
 use yii\helpers\Html;
 
-class Outdatedbrowser extends Widget {
+class OutdatedBrowser extends Widget {
 
     public $bgColor = '#f25648';
     public $color = '#ffffff';
@@ -19,7 +19,7 @@ class Outdatedbrowser extends Widget {
         $this->bundle = OutDatedBrowserAsset::register($this->view);
 
         $data = ArrayHelper::toArray($this, [
-                    Outdatedbrowser::class => ['bgColor', 'color', 'lowerThan', 'languagePath']
+                    self::class => ['bgColor', 'color', 'lowerThan', 'languagePath']
         ]);
 
         $js = $this->render('widget', ['data' => $data, 'onlyIe7' => $this->onlyIe7]);
