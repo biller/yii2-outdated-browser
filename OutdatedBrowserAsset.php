@@ -5,7 +5,7 @@ namespace biller\outdatedBrowser;
 use yii\web\AssetBundle;
 use yii\web\JqueryAsset;
 
-class OutDatedBrowserAsset extends AssetBundle {
+class OutdatedBrowserAsset extends AssetBundle {
 
     public $sourcePath = '@bower/outdated-browser/outdatedbrowser';
     public $js = [

@@ -16,7 +16,7 @@ class OutdatedBrowser extends Widget {
     private $bundle;
 
     public function run() {
-        $this->bundle = OutDatedBrowserAsset::register($this->view);
+        $this->bundle = OutdatedBrowserAsset::register($this->view);
 
         $data = ArrayHelper::toArray($this, [
                     self::class => ['bgColor', 'color', 'lowerThan', 'languagePath']
